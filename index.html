@@ -12,10 +12,18 @@
 <body>
   <header>
     <nav>
-      <img src="">
+      <img src="logo.png">
+      <input type="checkbox" id="check">
+        <label for="check" id="btn1"> 
+            <img src="menu.png">
+        </label>
+        <label for="check" id="btn2">
+            <img src="close.png">
+        </label>
+        <label for="check" id="btn3"></label>
      <ul>
    
-       <li><a href="">Home</a></li>
+       <li><a href="index.html">Home</a></li>
        <li><a href="">About</a></li>
        <li>Skills 
            <ul>
@@ -24,8 +32,7 @@
              <li>JavaScript</li>
           </ul>
        </li>
-       <li>
-         <a href="">Project</a>
+       <li>Project
            <ul>
              <li><a href=""></a></li>
              <li><a href=""></a></li>
@@ -34,18 +41,17 @@
              <li><a href=""></a></li>
           </ul>
        </li>
-       <li>
-         <a href="">Contact</a>
+       <li>Contact
            <ul>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
+             <li><a href="">E-mail</a></li>
+             <li><a href="">WhatsApp</a></li>
+             <li><a href="">Instagram</a></li>
+             <li><a href="">Facebook</a></li>
            </ul>
        </li>
          
      </ul>
-      <button onclick=change()><img src=""></button>
+      <img src="moon.png" id="icon">
     </nav>
   </header>
   <main>
@@ -53,7 +59,26 @@
       <h3></h3>
       <h1></h1>
     </p>
-    <img src="" alt="my photo">
+    <img src="image.png" alt="my photo">
   </main>
+<script>
+var icon = document.getElementById("icon");
+
+icon.onclick = function() {
+
+document.body.classList.toggle("dark-theme");
+
+if(document.body.classList.contains("dark-theme")){
+
+icon.src="sun.png";
+
+}else{
+
+icon.src="moon.png";
+
+}
+
+}
+</script>
 </body>
 </html>
