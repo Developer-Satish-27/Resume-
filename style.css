@@ -2,18 +2,22 @@
   padding:0;}
 :root{
   --color: white;
-      --bgcolor:black;
+      
       --btn: cream;
---bg:url("logo.png")
+--bg:url("backdark.png")
      }
 .light-theme{
   --color: black;
-      --bgcolor: white;
+      --bg: url("backlight.png");
       --btn: gray;
 }
 body{
   background:var(--bg);
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
      color:var(--color);
+}
  
  a:link, a:visited {
   color:var(--color);
