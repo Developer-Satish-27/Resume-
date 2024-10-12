@@ -35,7 +35,10 @@ nav {
   width: auto;
   backdrop-filter:blur(10px);
   font-size: 20px;
-}
+} 
+nav ul{
+  display: flex;
+      }
 ul li{
   display: block;
 }
