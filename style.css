@@ -4,6 +4,7 @@
   --color: white;
       --bgcolor:black;
       --btn: cream;
+--bg:url("logo.png")
      }
 .light-theme{
   --color: black;
@@ -11,7 +12,7 @@
       --btn: gray;
 }
 body{
-  background-color:var(--bgcolor);
+  background:var(--bg);
      color:var(--color);
  
  a:link, a:visited {
