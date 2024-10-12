@@ -1,0 +1,36 @@
+@media(max-width:450px){
+nav ul{display:none;}
+
+#btn1{display: block;}
+#check:checked ~ #btn1{display:none;}
+#check:checked ~btn2{display: block;}
+#check:checked~btn3{display:block;
+Height:100%;
+Width:100%;
+Z-index:9;}
+#check:checked ~ul{
+Height:100%;
+Width:100%;
+Position: fixed; 
+Z-index:10;
+Display: block;
+Justify-content: flex-start;
+Padding:10px;
+Backdrop-filter:blue(20px);
+}
+
+li{
+Margin:0 50px;
+Width:100%;
+}
+li:hover{
+Color:white;
+Background-color:gray;
+transition:all 0.5s ease-in-out;
+}
+.text{font-size:20px;
+Line-height:30px;
+Text-align:center;
+Overflow: visible;
+}
+}
