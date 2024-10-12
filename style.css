@@ -51,11 +51,11 @@ ul li:hover ul{
 #check,#btn1,#btn2,#btn3{
   display: none;
 }
-.logo {
+.logo { border-redius:50%;
   height:70px;
        width:70px;
       }
-#menu,#close{
+#menu,#close,#icon{
   height:50px;
              width:50px;
             }
