@@ -11,15 +11,15 @@
       --btn: gray;
 }
 body{
-  background-color:var(bgcolor);
-     color:var(color);
+  background-color:var(--bgcolor);
+     color:var(--color);
     }
 header{
   display:flex;
        padding:10px;
       }
 a:link,a:visited {
-  color:var(color);
+  color:var(--color);
   text-decorection:none;
 }
 a:active,a:hover 
