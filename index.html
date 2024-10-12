@@ -12,13 +12,13 @@
 <body>
   <header>
     <nav>
-      <img src="logo.png">
+      <img src="logo.png" class="logo">
       <input type="checkbox" id="check">
         <label for="check" id="btn1"> 
-            <img src="menu.png">
+            <img src="menu.png" id="menu">
         </label>
         <label for="check" id="btn2">
-            <img src="close.png">
+            <img src="close.png" id="close">
         </label>
         <label for="check" id="btn3"></label>
      <ul>
@@ -66,9 +66,9 @@ var icon = document.getElementById("icon");
 
 icon.onclick = function() {
 
-document.body.classList.toggle("dark-theme");
+document.body.classList.toggle("light-theme");
 
-if(document.body.classList.contains("dark-theme")){
+if(document.body.classList.contains("light-theme")){
 
 icon.src="moon.png";
 icon.alt="dark";
