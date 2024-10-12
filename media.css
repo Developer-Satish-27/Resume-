@@ -3,14 +3,14 @@ nav ul{display:none;}
 
 #btn1{display: block;}
 #check:checked ~ #btn1{display:none;}
-#check:checked ~btn2{display: block;}
-#check:checked~btn3{display:block;
+#check:checked ~#btn2{display: block;}
+#check:checked~#btn3{display:block;
 Height:100%;
 Width:100%;
 Z-index:9;}
 #check:checked ~ul{
 Height:100%;
-Width:100%;
+Width:80%;
 Position: fixed; 
 Z-index:10;
 Display: block;
