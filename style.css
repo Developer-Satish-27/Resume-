@@ -67,10 +67,10 @@ main{
   width:100%;
   padding:50px;
 position: relative;
-top:200px;
+top:400px;
 }
  .image{
-  height: auto 
+  height: auto ;
   width:50%;
   border-radius:50%;
 }
