@@ -41,6 +41,8 @@ nav {
 } 
 nav ul{
   display: flex;
+  justify-content:space-between;
+  align-items:center;
       }
 ul li{
   display: block;
@@ -54,7 +56,7 @@ ul li:hover ul{
 #check,#btn1,#btn2,#btn3{
   display: none;
 }
-.logo { border-redius:50%;
+.logo { border-radius:50%;
   height:70px;
        width:70px;
       }
@@ -72,10 +74,14 @@ main{
 position: reletive;
 top:200px;
 }
-main img,p{
+main img{
   height:calc(100%-50px);
   width:50%;
-  font-size:30px;
+  border-radius:50%;
 }
-
+p{
+  height:calc(100%-50px);
+  width:50%;
+  font-size:50px;
+}
          
