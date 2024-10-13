@@ -5,87 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="web icon" href="logo.png" >
+    <link rel="icon" href="logo.png"> <!-- Corrected 'web icon' to 'icon' -->
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="media.css">
-<script src="script.js"></script>
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js" defer></script> <!-- Added 'defer' for better loading -->
 </head>
+
 <body>
-      
+
     <nav>
-     <img src="logo.png" class="logo">
-      <input type="checkbox" id="check">
-        <label for="check" id="btn1"> 
-            <img src="menu.png" id="menu">
+        <img src="logo.png" class="logo" alt="Logo">
+        <input type="checkbox" id="check">
+        <label for="check" id="btn1">
+            <img src="menu.png" id="menu" alt="Open menu">
         </label>
         <label for="check" id="btn2">
-            <img src="close.png" id="close">
+            <img src="close.png" id="close" alt="Close menu">
         </label>
-        <label for="check" id="btn3"></label>
-     <ul>
-   
-       <li><a href="index.html">Home</a></li>
-       <li><a href="">About</a></li>
-       <li>Skills 
-           <ul>
-             <li>HTML5</li>
-             <li>CSS</li>
-             <li>JavaScript</li>
-          </ul>
-       </li>
-       <li>Project
-           <ul>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-          </ul>
-       </li>
-       <li>Contact
-           <ul>
-             <li><a href="">E-mail</a></li>
-             <li><a href="">WhatsApp</a></li>
-             <li><a href="">Instagram</a></li>
-             <li><a href="">Facebook</a></li>
-           </ul>
-       </li>
-         <li><img src="sun.png" id="icon" alt="light"></li>
-     </ul>
-      
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>Skills
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Project
+                <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+            <li>Contact
+                <ul>
+                    <li><a href="mailto:satish27102004@gmail.com" target="_blank">E-mail</a></li>
+                    <li><a href="https://wa.me/9024704773" target="_blank">WhatsApp</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                </ul>
+            </li>
+            <li><img src="sun.png" id="icon" alt="Light theme icon"></li>
+        </ul>
     </nav>
- 
-  <main>
-<div class="text">
-    
-      <h3>Full-Stack Developer</h3><br>
-      <h1>Hi, I'm <u>Satish <br>Saini</u> from Jaipur.</h1>
-    
-</div>
-<div class="image">
-    <img src="" alt="my photo">
-</div>
-  </main>
-<script>
-var icon = document.getElementById("icon");
 
-icon.onclick = function() {
+    <main>
+        <div class="text">
+            <h3>Full-Stack Developer</h3><br>
+            <h1>Hi, I'm <u>Satish<br>Saini</u> from Jaipur.</h1>
+        </div>
+        <div class="image">
+            <img src="myphoto.jpg" alt="Satish's photo">
+        </div>
+    </main>
 
-document.body.classList.toggle("light-theme");
+    <script>
+        var icon = document.getElementById("icon");
 
-if(document.body.classList.contains("light-theme")){
+        icon.onclick = function() {
+            document.body.classList.toggle("light-theme");
 
-icon.src="moon.png";
-icon.alt="dark";
-
-}else{
-
-icon.src="sun.png";
-icon.alt="light"
-
-}
-
-}
-</script>
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "moon.png";
+                icon.alt = "Dark theme icon";
+            } else {
+                icon.src = "sun.png";
+                icon.alt = "Light theme icon";
+            }
+        };
+    </script>
 </body>
+
 </html>
