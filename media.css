@@ -1,23 +1,24 @@
-@media(max-width:420px){
+@media(max-width:450px){
 nav ul{display:none;}
 
 #btn1{display: block;}
 #check:checked ~ #btn1{display:none;}
-#check:checked ~#btn2{display: block;}
-#check:checked~#btn3{display:block;
+#check:checked ~#btn2{display: block;
+padding-top:20px;}
+#check:checked~#btn3{display: inline-block;
 Height:100%;
 Width:100%;
-Z-index:9;}
+}
 #check:checked ~ul{
 Height:100%;
 Width:80%;
 Position: fixed; 
-top:20px;
+top:80px;
 left:0;
-Z-index:10;
 Display: block;
 Justify-content: flex-start;
 Padding:10px;
+background-color:rgba(0,0,0,0.3);
 Backdrop-filter:blue(20px);
 }
 
