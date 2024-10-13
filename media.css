@@ -58,7 +58,7 @@ z-index:1000;
         transition: background-color 0.5s ease-in-out;
     }
 ul li ul {
-position:relative;
+position:fixed;
 }
 
     .text {
