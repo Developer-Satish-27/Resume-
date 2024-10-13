@@ -1,10 +1,11 @@
-@media(max-width:450px) {
+@media (max-width: 450px) {
     nav ul {
         display: none;
     }
 
     #btn1 {
         display: block;
+        cursor: pointer;
     }
 
     #check:checked ~ #btn1 {
@@ -14,42 +15,61 @@
     #check:checked ~ #btn2 {
         display: block;
         padding-top: 20px;
+        cursor: pointer;
     }
 
     #check:checked ~ #btn3 {
         display: block;
         height: 100%;
         width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 999; /* Ensures menu overlay stays on top */
     }
 
     #check:checked ~ ul {
         height: 100%;
         width: 80%;
-        position: fixed; 
+        position: fixed;
         top: 80px;
         left: 0;
-        display: block;
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
         justify-content: flex-start;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
         backdrop-filter: blur(20px);
+        transition: all 0.5s ease-in-out;
     }
 
-    li {
-        margin: 0 50px;
+    ul li {
+        margin: 20px 0;
         width: 100%;
+        text-align: center;
     }
 
-    li:hover {
+    ul li:hover {
         color: white;
         background-color: gray;
-        transition: all 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out;
     }
 
     .text {
         font-size: 20px;
-        line-height: 50px;
+        line-height: 1.5;
         text-align: center;
-        overflow: visible;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    #menu, #close, #icon {
+        height: 25px;
+        width: 25px;
     }
 }
