@@ -49,6 +49,7 @@ z-index:1000;
         margin: 20px 0;
         width: 100%;
         text-align:left;
+position: fixed;
     }
 
     ul li:hover {
@@ -56,7 +57,7 @@ z-index:1000;
         background-color: gray;
         transition: background-color 0.5s ease-in-out;
     }
-ul Li ul {
+ul li ul {
 position:relative;
 }
 
