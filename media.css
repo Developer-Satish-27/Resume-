@@ -12,6 +12,7 @@ Z-index:9;}
 Height:100%;
 Width:80%;
 Position: fixed; 
+left:0;
 Z-index:10;
 Display: block;
 Justify-content: flex-start;
@@ -29,7 +30,7 @@ Background-color:gray;
 transition:all 0.5s ease-in-out;
 }
 .text{font-size:20px;
-Line-height:30px;
+Line-height:50px;
 Text-align:center;
 Overflow: visible;
 }
