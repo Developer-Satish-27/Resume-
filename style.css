@@ -31,7 +31,7 @@ nav {
   z-index:1000;
   padding:10px;
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items:center;
   height:80px;
   width: 100%;
