@@ -56,6 +56,9 @@ z-index:1000;
         background-color: gray;
         transition: background-color 0.5s ease-in-out;
     }
+ul Li ul {
+position:relative;
+}
 
     .text {
         font-size: 20px;
