@@ -1,39 +1,55 @@
-@media(max-width:450px){
-nav ul{display:none;}
+@media(max-width:450px) {
+    nav ul {
+        display: none;
+    }
 
-#btn1{display: block;}
-#check:checked ~ #btn1{display:none;}
-#check:checked ~#btn2{display: block;
-padding-top:20px;}
-#check:checked~#btn3{display:block;
-Height:100%;
-Width:100%;
-}
-#check:checked ~ul{
-Height:100%;
-Width:80%;
-Position: fixed; 
-top:80px;
-left:0;
-Display: block;
-Justify-content: flex-start;
-Padding:10px;
-background-color:rgba(0,0,0,0.3);
-Backdrop-filter:blue(20px);
-}
+    #btn1 {
+        display: block;
+    }
 
-li{
-Margin:0 50px;
-Width:100%;
-}
-li:hover{
-Color:white;
-Background-color:gray;
-transition:all 0.5s ease-in-out;
-}
-.text{font-size:20px;
-Line-height:50px;
-Text-align:center;
-Overflow: visible;
-}
+    #check:checked ~ #btn1 {
+        display: none;
+    }
+
+    #check:checked ~ #btn2 {
+        display: block;
+        padding-top: 20px;
+    }
+
+    #check:checked ~ #btn3 {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    #check:checked ~ ul {
+        height: 100%;
+        width: 80%;
+        position: fixed; 
+        top: 80px;
+        left: 0;
+        display: block;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(20px);
+    }
+
+    li {
+        margin: 0 50px;
+        width: 100%;
+    }
+
+    li:hover {
+        color: white;
+        background-color: gray;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        overflow: visible;
+    }
 }
