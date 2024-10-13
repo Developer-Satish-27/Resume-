@@ -42,6 +42,7 @@
         background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
         backdrop-filter: blur(20px);
         transition: all 0.5s ease-in-out;
+z-index:1000;
     }
 
     ul li {
