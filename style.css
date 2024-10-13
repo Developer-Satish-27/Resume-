@@ -62,6 +62,7 @@ nav ul {
 
 ul li {
   margin: 10px;
+list-style:none;
   position: relative; /* For dropdown positioning */
 }
 
@@ -95,8 +96,8 @@ ul li:hover ul {
 
 /* Icons (menu, close, theme switch) */
 #menu, #close, #icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -162,7 +163,7 @@ main {
   }
 
   #menu, #close, #icon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
   }
 }
