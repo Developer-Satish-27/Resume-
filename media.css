@@ -1,5 +1,7 @@
 @media(max-width:450px){
 nav ul{display:none;}
+nav{margin:20px;
+padding:10px;}
 
 #btn1{display: block;}
 #check:checked ~ #btn1{display:none;}
