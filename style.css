@@ -14,7 +14,7 @@
 
 .light-theme {
   --color: black;
-  --bg: url("backlight.png");
+  --bg: url("backlight.jpg");
   --btn: gray;
 }
 
