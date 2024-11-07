@@ -51,7 +51,7 @@ z-index:1000;
         text-align:left;
 
     }
-li ul li {position: absolute;
+li ul li {position: relative;
 left:50%;
 top:10%;}
 
