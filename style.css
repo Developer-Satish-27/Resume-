@@ -125,7 +125,7 @@ main {
 .image img {
   width: 100%; /* Makes the image responsive */
   max-width: 300px; /* Ensures the image doesn't get too large */
-  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   object-fit: cover; /* Ensures image maintains aspect ratio */
 }
 
