@@ -110,7 +110,7 @@ main {
   width: 100%;
   padding: 50px;
   position: relative;
-  top: 100px; /* You may want to adjust this for smaller screens */
+  top: 50px; /* You may want to adjust this for smaller screens */
   gap: 20px; /* Adds space between text and image */
 }
 
