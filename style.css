@@ -8,14 +8,14 @@
 /* Defining CSS variables for themes */
 :root {
   --color: white;
-  --btn: cream;
+  
   --bg: url("backdark.png");
 }
 
 .light-theme {
   --color: black;
   --bg: url("backlight.jpg");
-  --btn: gray;
+  
 }
 
 /* Styling the body */
@@ -72,10 +72,11 @@ ul li ul {
   position: absolute;
   top: 100%; /* Positioning the dropdown below the parent */
   left: 0;
-  background-color: var(--btn);
+width:100%;
+  background-color: gray;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0);
 }
 
 ul li:hover ul {
