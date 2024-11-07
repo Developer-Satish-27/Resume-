@@ -51,6 +51,7 @@ z-index:1000;
         text-align:left;
 
     }
+li ul li {text-align: center;}
 
     ul li:hover {
         color: white;
